@@ -8,6 +8,8 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 export default defineConfig({
+  base: "/Atmos/",
+
   plugins: [
     react(),
     tailwindcss(),
@@ -20,6 +22,7 @@ export default defineConfig({
   },
 
   server: {
+    host: "0.0.0.0",
     port: 5173,
   },
 });
